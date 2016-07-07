@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="import" href="../cordova-core.html">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+
+    <title>cordova-core Demo</title>
+
+    <script src="../../webcomponentsjs/webcomponents-lite.min.js"></script>
+  </head>
+  <body>
+    <style>
+      .paused,
+      .ready {
+        border: 0;
+        font-size: 18px;
+        font-weight: bold;
+        height: 50%;
+        left: 0;
+        position: fixed;
+        transition: background-color .25s ease-out, color .25s ease-out;
+        width: 100%;
+      }
+
+      .paused[disabled],
+      .ready[disabled] {
+        color: #222222;
+        text-decoration: line-through;
+      }
+
+      .paused {
+        background-color: #03a9f4;
+        color: #222222;
+        top: 50%;
+      }
+
+      .paused[disabled] {
+        background-color: #80d8ff;
+      }
+
+      .ready {
+        background-color: #009688;
+        color: #ffffff;
+        top: 0;
+      }
+
+      .ready[disabled] {
+        background-color: #a7ffeb;
+      }
+    </style>
+
+    <cordova-core></cordova-core>
+
+    <button class="ready" disabled>READY</button>
+    <button class="paused" disabled>PAUSED</button>
+
+    <script>
+      var coreEl = window.coreEl = document.querySelector('cordova-core');
+      var pausedEl = document.querySelector('button.paused');
+      var readyEl = document.querySelector('button.ready');
+
+      coreEl.addEventListener('paused-changed', function(e) {
+        pausedEl.disabled = e.detail.value;
+      });
+
+      coreEl.addEventListener('ready-changed', function(e) {
+        readyEl.disabled = !e.detail.value;
+      });
+
+      pausedEl.disabled = coreEl.paused;
+      readyEl.disabled = !coreEl.ready;
+    </script>
+  </body>
+</html>
