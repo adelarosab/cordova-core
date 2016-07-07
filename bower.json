@@ -4,24 +4,28 @@
   "authors": [
     "Adrian de la Rosa <adrian@delarosab.me>"
   ],
-  "description": "An element providing a solution to no problem in particular.",
+  "description": "An element providing a basic interface about cordova application status.",
   "keywords": [
     "web-component",
+    "web-components",
     "polymer",
-    "seed"
+    "cordova",
+    "core"
   ],
   "main": "cordova-core.html",
   "license": "http://polymer.github.io/LICENSE.txt",
-  "homepage": "https://github.com/<USERNAME>/seed-element/",
+  "homepage": "https://github.com/adelarosab/cordova-core/",
   "ignore": [
     "/.*",
+    "/demo/",
+    "/index.html",
+    "/README.md",
     "/test/"
   ],
   "dependencies": {
     "polymer": "Polymer/polymer#^1.2.0"
   },
   "devDependencies": {
-    "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
-    "web-component-tester": "^4.0.0"
+    "iron-component-page": "PolymerElements/iron-component-page#^1.0.0"
   }
 }
