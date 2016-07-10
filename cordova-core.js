@@ -47,12 +47,10 @@ Polymer(
       );
 
       if (!cordovaEl) {
-        const location = window.location;
         let script = document.createElement('script');
-        let path = location.pathname.split('/').slice(0, -1).join('/');
 
         script.id = 'cordova';
-        script.src = location.origin + path + '/cordova.js';
+        script.src = 'cordova.js';
 
         document.body.appendChild(script);
       }
