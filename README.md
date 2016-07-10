@@ -12,11 +12,11 @@ _[Demo and API docs](https://adelarosab.github.io/)_
 ></cordova-core>
 ```
 ### Attributes
-
-#### ready
-
-Return if cordova deviceready event has been fired.
  
-#### paused
+#### paused (read-only)
 
 Return if cordova application is paused.
+
+#### ready (read-only)
+
+Return if cordova deviceready event has been fired.
