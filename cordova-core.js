@@ -28,6 +28,8 @@ Polymer(
     },
 
     attached() {
+      const cordovaEl = document.querySelector('#cordova');
+
       document.addEventListener(
         'deviceready',
         this._setReady.bind(this, true),
@@ -43,6 +45,17 @@ Polymer(
         this._setPaused.bind(this, false),
         false
       );
+
+      if (!cordovaEl) {
+        const location = window.location;
+        let script = document.createElement('script');
+        let path = location.pathname.split('/').slice(0, -1).join('/');
+
+        script.id = 'cordova';
+        script.src = location.origin + path + '/cordova.js';
+
+        document.body.appendChild(script);
+      }
     },
 
     detached() {

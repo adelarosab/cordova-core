@@ -15,6 +15,7 @@
       .paused,
       .ready {
         border: 0;
+        color: #fff;
         font-size: 18px;
         font-weight: bold;
         height: 50%;
@@ -26,13 +27,13 @@
 
       .paused[disabled],
       .ready[disabled] {
-        color: #222222;
+        color: #222;
         text-decoration: line-through;
       }
 
       .paused {
         background-color: #03a9f4;
-        color: #222222;
+        color: #222;
         top: 50%;
       }
 
@@ -42,12 +43,12 @@
 
       .ready {
         background-color: #009688;
-        color: #ffffff;
         top: 0;
       }
 
       .ready[disabled] {
-        background-color: #a7ffeb;
+        background-color: #f44336;
+        color: #fff;
       }
     </style>
 
@@ -61,13 +62,17 @@
       var pausedEl = document.querySelector('button.paused');
       var readyEl = document.querySelector('button.ready');
 
-      coreEl.addEventListener('paused-changed', function(e) {
-        pausedEl.disabled = e.detail.value;
-      });
+      coreEl.addEventListener(
+        'paused-changed', function (e) {
+          pausedEl.disabled = e.detail.value;
+        }
+      );
 
-      coreEl.addEventListener('ready-changed', function(e) {
-        readyEl.disabled = !e.detail.value;
-      });
+      coreEl.addEventListener(
+        'ready-changed', function (e) {
+          readyEl.disabled = !e.detail.value;
+        }
+      );
 
       pausedEl.disabled = coreEl.paused;
       readyEl.disabled = !coreEl.ready;
