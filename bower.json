@@ -10,6 +10,7 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "cordova-core": "^1.1.5"
+    "cordova-core": "^1.1.5",
+    "iron-component-page": "^1.1.7"
   }
 }
