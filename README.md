@@ -1,5 +1,7 @@
 _[Demo and API docs](https://adelarosab.github.io/cordova-core)_
 
+## Note:
+Due to restrictions `ready` attribute is not shown into attributes table.
 
 ## &lt;cordova-core&gt;
 
