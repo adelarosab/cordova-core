@@ -1,4 +1,4 @@
-_[Demo and API docs](https://adelarosab.github.io/)_
+_[Demo and API docs](https://adelarosab.github.io/cordova-core)_
 
 
 ## &lt;cordova-core&gt;
