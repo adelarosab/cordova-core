@@ -12,8 +12,7 @@ Polymer(
       ready: {
         notify: true,
         readOnly: true,
-        type: Boolean,
-        value: false
+        type: Boolean
       },
 
       /**
@@ -22,13 +21,12 @@ Polymer(
       paused: {
         notify: true,
         readOnly: true,
-        type: Boolean,
-        value: false
+        type: Boolean
       }
     },
 
     attached() {
-      const cordovaEl = document.querySelector('#cordova');
+      const cordovaEl = document.querySelector('[src="cordova.js"]');
 
       document.addEventListener(
         'deviceready',
@@ -49,7 +47,6 @@ Polymer(
       if (!cordovaEl) {
         let script = document.createElement('script');
 
-        script.id = 'cordova';
         script.src = 'cordova.js';
 
         document.body.appendChild(script);

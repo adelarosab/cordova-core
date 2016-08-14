@@ -1,6 +1,6 @@
 {
   "name": "cordova-core",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "authors": [
     "Adrian de la Rosa <adrian@delarosab.me>"
   ],
@@ -13,7 +13,7 @@
     "core"
   ],
   "main": "cordova-core.html",
-  "license": "http://polymer.github.io/LICENSE.txt",
+  "license": "https://raw.githubusercontent.com/adelarosab/cordova-core/master/LICENSE",
   "homepage": "https://github.com/adelarosab/cordova-core/",
   "ignore": [
     "/.*",
@@ -24,9 +24,9 @@
     "/test/"
   ],
   "dependencies": {
-    "polymer": "^1.6.0"
+    "polymer": "^1.6.1"
   },
   "devDependencies": {
-    "iron-component-page": "PolymerElements/iron-component-page#^1.0.0"
+    "iron-component-page": "^1.1.7"
   }
 }
