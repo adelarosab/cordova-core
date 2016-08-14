@@ -58,9 +58,9 @@
     <button class="paused" disabled>PAUSED</button>
 
     <script>
-      var coreEl = window.coreEl = document.querySelector('cordova-core');
-      var pausedEl = document.querySelector('button.paused');
-      var readyEl = document.querySelector('button.ready');
+      const coreEl = window.coreEl = document.querySelector('cordova-core');
+      const pausedEl = document.querySelector('button.paused');
+      const readyEl = document.querySelector('button.ready');
 
       coreEl.addEventListener(
         'paused-changed', function (e) {
