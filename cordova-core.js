@@ -12,8 +12,7 @@ Polymer(
       ready: {
         notify: true,
         readOnly: true,
-        type: Boolean,
-        value: false
+        type: Boolean
       },
 
       /**
@@ -22,8 +21,7 @@ Polymer(
       paused: {
         notify: true,
         readOnly: true,
-        type: Boolean,
-        value: false
+        type: Boolean
       }
     },
 
