@@ -5,6 +5,10 @@ Polymer(
   {
     is: 'cordova-core',
 
+    hostAttributes: {
+      hidden: true
+    },
+
     properties: {
       /**
        * Return if cordova deviceready event has been fired.

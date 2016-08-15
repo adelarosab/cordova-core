@@ -1,14 +1,14 @@
 _[Demo and API docs](https://adelarosab.github.io/cordova-core)_
-###### Note:
-Due to restrictions `ready` attribute is not shown into attributes table.
 
-***
-***
-
-## &lt;cordova-core&gt;
-
+### &lt;cordova-core&gt;
 `<cordova-core>` implements a basic interface about cordova application status.
 
+### Installation
+```bash
+bower install --save cordova-core
+```
+
+### Usage
 ```html
 <cordova-core
     ready
@@ -16,12 +16,11 @@ Due to restrictions `ready` attribute is not shown into attributes table.
 ></cordova-core>
 ```
 
+`<cordova-core>` allow to read the state of the native aplication in the 
+current moment. `ready` means cordova is fully operative and `pause` the 
+application is running in background. 
+
 ---
 
-### Attributes
- 
-#### paused (read-only)
-Return if cordova application is paused.
-
-#### ready (read-only)
-Return if cordova deviceready event has been fired.
+###### Note
+Due to restrictions `ready` attribute is not shown into attributes table.
