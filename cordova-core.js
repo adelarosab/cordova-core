@@ -1,6 +1,4 @@
 /*globals Polymer */
-'use strict';
-
 Polymer(
   {
     is: 'cordova-core',
