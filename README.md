@@ -17,7 +17,7 @@ bower install --save cordova-core
 ```
 
 `<cordova-core>` allow to read the state of the native aplication in the 
-current moment. `ready` means cordova is fully operative and `pause` the 
+current moment. `ready` means cordova is fully operative and `paused` the 
 application is running in background. 
 
 ---
